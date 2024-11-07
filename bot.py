@@ -40,7 +40,7 @@ async def edt_s1(ctx):
 
 @bot.command()
 async def edt_s2(ctx):
-        await ctx.send("Je vais vous envoyer l'emploi du temps attendez quelque secondes.")
+        await ctx.send("Je vais vous envoyer l'emploi du temps .")
         l3 = dict( 
                 width=1450,
                 height=1350,
