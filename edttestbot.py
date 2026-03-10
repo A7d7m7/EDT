@@ -9,8 +9,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Url de l'emploi du temps
-url = "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRWbrMfK5FUlU4we-MLUyZIMMNBw3k9oCNFwDkrxxzfVptemgd4h4Tf66Et7yaQ94j9vPXiQvy3bvZG/pubhtml?pli=1#"
-
+url = #url
 # Repond au bonjour
 @bot.command()
 async def bonjour(ctx):
@@ -27,7 +26,7 @@ async def edt_s1(ctx):
             page = await browser.new_page()
             
             # Va sur une URL
-            url = "https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vRWbrMfK5FUlU4we-MLUyZIMMNBw3k9oCNFwDkrxxzfVptemgd4h4Tf66Et7yaQ94j9vPXiQvy3bvZG/pubhtml?pli=1#"
+            url = google.com #template il faut l'url du sheet ou y'a l'EDT
             await page.goto(url)
             
             await page.set_viewport_size({"width": 1500, "height": 1350})
@@ -86,5 +85,5 @@ async def edt_s2(ctx):
         await ctx.send("Voici l'emploi du temps de la section 2:")
         await ctx.send(file=discord.File(f'{img_name}.png'))
 
-token = 'MTMwMzQ0NzMzODMyNDMzMjU3NA.GHLhzo.CUqz43llYkvDi7BgcYXwsczTEDb3lu5-tw9oKY'
+token = #tokken discord
 bot.run(token)
